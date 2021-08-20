@@ -1,0 +1,6 @@
+@import url(./common/subBar.css);
+@import url(./common/navBar.css);
+body {
+    background: url(../images/productor_bg.jpg) no-repeat top;
+    background-size: cover;
+}

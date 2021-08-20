@@ -1,0 +1,158 @@
+@import url(./common/backCommon.css);
+.table {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.table dt,
+.list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff8400;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.table dd {
+    display: inline-block;
+    padding: 10px;
+}
+
+.table dd div {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.table dd strong {
+    font-size: 24px;
+    color: #ff8400;
+    margin-bottom: 10px;
+}
+
+.table dd span {
+    color: #aaa;
+}
+
+.table dd div::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#fff, #ccc, #fff);
+    right: 0;
+}
+
+.list {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.list ul {
+    padding: 20px;
+    /* 清除浮动 */
+    overflow: hidden;
+}
+
+.list li {
+    width: 200px;
+    height: 140px;
+    border: 1px solid #afafaf;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 14px;
+}
+
+.list li div {
+    height: 100px;
+    background: #898989;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.list li div span {
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+.list li p {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.list li div button {
+    width: 100%;
+    height: 100%;
+    background: #66a8a6;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    /* 隐藏 */
+    top: -100px;
+    transition: .3s;
+}
+
+.list li.eating {
+    border-color: #e5553f;
+}
+
+.list li.eating div {
+    border-color: #e5553f;
+    cursor: pointer;
+}
+
+.list li.eating div {
+    background: #e5553f;
+}
+
+.list li.eating p {
+    color: #e5553f;
+}
+
+.list li.eating:hover button {
+    top: 0;
+}
+
+.list li.ording {
+    border-color: #fc9723;
+}
+
+.list li.ording div {
+    background: #fc9723;
+}
+
+.list li.ording p {
+    color: #fc9723;
+}
+
+.list .add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list .add span {
+    font-size: 120px;
+    color: #ccc;
+}
+
+.list .add:hover {
+    background: #eee;
+    transition: .3s;
+}

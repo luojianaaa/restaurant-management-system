@@ -1,0 +1,41 @@
+.left {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #3f3f3f;
+}
+
+.left img {
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.left li {
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+    padding-left: 30px;
+    cursor: pointer;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.left li span {
+    margin-right: 20px;
+}
+
+.left li:hover,
+.left li.active {
+    background: #2b2b2b;
+}
+
+.right {
+    /* min-height 属性设置元素的最小高度。 */
+    min-height: 100vh;
+    background: #e0e3e8;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin-left: 300px;
+}

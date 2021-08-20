@@ -1,0 +1,5 @@
+@import url(./common/subBar.css);
+body {
+    background: url(../images/productor_bg.jpg) no-repeat top;
+    background-size: cover;
+}

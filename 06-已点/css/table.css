@@ -1,0 +1,87 @@
+@import url(./common/subBar.css);
+body {
+    background: url(../images/productor_bg.jpg) no-repeat top;
+    background-size: cover;
+    /* 图片固定不会跟着滚动条走动 */
+    background-attachment: fixed;
+}
+
+#content {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    bottom: 20px;
+    left: 300px;
+    background: rgba(255, 255, 255, .2);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.legend {
+    display: flex;
+    /* 位置在最右端 */
+    justify-content: flex-end;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.legend li {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.legend li div {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.legend li div span {
+    font-size: 25px;
+}
+
+.legend li:nth-child(1) div,
+.table div {
+    background: #66a8a6;
+}
+
+.legend li:nth-child(2) div,
+.table .ordering div {
+    background: #f79700;
+}
+
+.legend li:nth-child(3) div,
+.table .eating div {
+    background: #e5553f;
+}
+
+.table {
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.table li {
+    color: #fff;
+    /*既可以像块状元素一样定义 高度宽度，又可以和内联元素（比如文字）排列在一行（宽度不够时，自动换行，从左到右排列）。 */
+    display: inline-block;
+    text-align: center;
+    margin: 0 37px 50px;
+    cursor: pointer;
+}
+
+.table div {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.table div span {
+    font-size: 80px;
+}

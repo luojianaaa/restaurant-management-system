@@ -1,0 +1,133 @@
+@import url(./common/subBar.css);
+@import url(./common/navBar.css);
+body {
+    background: url(../images/productor_bg.jpg) no-repeat top;
+    background-size: cover;
+    /* 图片固定不会跟着滚动条走动 */
+    background-attachment: fixed;
+}
+
+#content {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    bottom: 20px;
+    left: 300px;
+    background: rgba(255, 255, 255, .2);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.orderBox {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.orderBox li {
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.orderBox img {
+    width: 80px;
+    height: 80px;
+}
+
+.orderBox table {
+    width: 100%;
+}
+
+.orderBox tr {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.orderBox td {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.orderBox td:nth-child(1) {
+    width: 5%;
+}
+
+.orderBox td:nth-child(6) {
+    width: 20%;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 省略多余的内容 */
+    overflow: hidden;
+    /* 变成省略号 */
+    text-overflow: ellipsis;
+}
+
+.orderBox button {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .5);
+    /* 垂直对齐 */
+    vertical-align: middle;
+}
+
+.orderBox button span {
+    font-size: 12px;
+}
+
+.orderBox .num {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+    vertical-align: middle;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.orderBox button .select span {
+    font-size: 20px;
+}
+
+.orderBox td:nth-child(4) {
+    /* 清除间隙 */
+    font-size: 0;
+}
+
+.orderBox .foot {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 10px 0;
+}
+
+.orderBox .foot span {
+    margin-right: 40px;
+}
+
+.orderBox .foot strong {
+    color: #ffcb4e;
+    font-size: 20px;
+}
+
+.orderBox .foot .addDishes {
+    width: 50px;
+    height: 25px;
+    background: #a65335;
+    border-radius: 5px;
+    border: none;
+}
+
+.orderBox .foot .pay {
+    width: 80px;
+    height: 35px;
+    background: #ff8400;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
